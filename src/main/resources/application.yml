@@ -1,0 +1,17 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    mode: HTML
+    servlet:
+      content-type: text/html
+  profiles:
+    active: pro
+
+
+mybatis:
+  type-aliases-package: com.hong.myblog.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+#   map-underscore-to-camel-case 开启驼峰功能
+#  type-aliases-package 指定entity扫描包类让mybatis自定扫描到自定义的entity
