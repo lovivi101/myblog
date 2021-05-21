@@ -47,7 +47,7 @@ public class BlogController {
     public String input(Model model){
         model.addAttribute("types" , typeService.getAllType());
         model.addAttribute("blog" , new Blog());
-        return "/admin/blogs-input";
+        return "admin/blogs-input";
     }
 
 
@@ -87,7 +87,7 @@ public class BlogController {
         PageInfo<BlogQuery> pageInfo = new PageInfo<>(blogQuery);
         model.addAttribute("types" , typeService.getAllType());
         model.addAttribute("pageInfo" , pageInfo);
-        return "/admin/blogs";
+        return "admin/blogs";
     }
 
 
