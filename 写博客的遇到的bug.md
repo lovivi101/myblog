@@ -1313,3 +1313,4 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/admi
 ![image-20210521170239640](写博客的遇到的bug.assets/image-20210521170239640.png)
 
 把admin前面的“ /”取消掉 因为放回的 视图层的前缀默认是 templates/
+
